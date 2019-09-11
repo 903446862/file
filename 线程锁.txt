@@ -1,0 +1,3 @@
+帖子 ——————  https://www.cnblogs.com/takumicx/p/9338983.html
+	独占锁：ReentrantLock 和 synchronized
+	ReentrantLock相比synchronized而言功能更加丰富，使用起来更为灵活，也更适合复杂的并发场景

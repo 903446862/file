@@ -1,0 +1,18 @@
+postgresql将多条记录合并为一个字符或者反之-----------------------------转至https://blog.csdn.net/u011498933/article/details/79391219
+	array_to_string内置函数
+	示例：select array_to_string(array(
+
+	    select distinct name from tab where 1=1
+
+		),'-->') as strs;
+
+		regexp_splite_to_table
+
+	示例：select regexp_splite_to_table('asd,qwe,qeq,ere,fds,ert',',') as id;
+
+		分割之后再转化为整数
+
+		select cast( regexp_splite_to_table('1,2,3,4,5,6',',') as integer) as id;
+
+postgresql判断条件赋值字符串
+	CASE 判断主体 when 条件1 then 输出值1 when 条件2 then 输出值2 else 输出值3 end  
