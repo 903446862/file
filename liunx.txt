@@ -1,0 +1,6 @@
+RHEL7开始，使用systemctl工具来管理服务程序，包括了service和chkconfig
+[root@rhel7 ~]# systemctl list-unit-files|grep enabled
+
+chkconfig --list 查看所有服务
+lsof -i:80 :你可以使用 lsof 命令来查看某一端口是否开放。查看端口可以这样来使用，以80端口为例
+不知道这连个文件在哪的话，可以执行locate +文件名 这个命令去查看文件在哪 || find / '文件名'
