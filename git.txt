@@ -1,0 +1,28 @@
+分支的新建与合并提交
+
+	1.创建分支
+		git checkout -b test
+
+		它是下面两条命令的简写：
+			git branch test
+			git checkout test
+	2.提交内容到分支（ HEAD 指针指向了 test 分支）	
+		git commit -a -m 'added a new footer [test]'
+
+			它是下面两条命令的简写：
+			git add .
+			git commit -m 'added a new footer [test]'
+
+
+	这时你已经有了test分支，并且可以在test分支上开发你的工作了，若遇到其他问题，可以切回dev分支修改bug,且与你当前开发互不干扰
+
+
+	---------------------------------------------华丽的分割线
+
+
+	现在我们test的工作已经开发完成了。现在需要合并到master分支
+
+		1.切回master分支
+			git checkout master
+		2.合并分支
+			git merge test
